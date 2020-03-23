@@ -17,6 +17,12 @@ display:flex;
   width: 400px;
 }
 
+/*
+  ==========================
+  Overall Layout
+  ==========================
+*/
+
 .recommended_header {
   width: 100%;
   display: flex;
@@ -575,7 +581,7 @@ height: 240px;
 }
 .img-profile {
 height: 48px;
-width: 48px:
+width: 48px;
 
 }
 .img-aside {
