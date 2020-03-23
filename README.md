@@ -2,7 +2,7 @@
 
 Youtube Player Page Replica
 
-![screenshot](./app_screenshot.png)
+![screenshot](./screenshot.jpg)
 
 HTML & CSS Youtube PLayer Page Replica
 
