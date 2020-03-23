@@ -44,9 +44,9 @@ Youtube Player Page Replica (Layout)
 
 👤 **Safa Erden**
 
-- Github: [@](https://github.com/)
-- Twitter: [@](https://twitter.com/)
-- Linkedin: [linkedin](https://linkedin.com/)
+- Github: [@safaerden](https://github.com/SafaErden)
+- Twitter: [@safaerden](https://twitter.com/safaerden)
+- Linkedin: [linkedin](https://www.linkedin.com/in/SafaErden/)
 
 ## 🤝 Contributing
 
