@@ -293,7 +293,6 @@ flex-direction: column;
 -webkit-overflow-scrolling: touch;
 justify-content: space-between;
 height: 100vh;
-margin-top: 23px;
 }
 
 #nav-drawer {
@@ -316,7 +315,7 @@ flex: none;
 height:60px;
 }
 .hide {
-transform: translate3d(-100%,0,0) !important;
+transform: translate3d(-100%,0,0);
 }
 
 /* Flex Elements */
@@ -521,8 +520,8 @@ color: #cc181e;
 i {
 padding-right: .4rem;
 }
-i.material-icons.md-18.md-dark{
-  padding:0px !important;
+i.material-icons.md-18.md-dark {
+  padding:0px;
 }
 /* Buttons & Links */
 
