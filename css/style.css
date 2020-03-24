@@ -7,21 +7,25 @@
 }
 .content{
 display:flex;
+margin-top: 6px;
 }
 #left {
   float: left;
 }
 
-.rightbar {
-  float: right;
-  width: 400px;
+.aside {
+      width: 350px;
+      flex: none;
+      padding: .5rem;
+      background: #fff;
+      border: 1px solid #e2e2e2;
+      margin-top: 13px;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+      display: block;
 }
 
-/*
-  ==========================
-  Overall Layout
-  ==========================
-*/
+/* Overall Layout */
 
 .recommended_header {
   width: 100%;
@@ -45,6 +49,22 @@ display:flex;
   color: #666666;
   align-items: center;
   justify-content: center;
+}
+
+i.autoplay {
+    margin-right: 0px;
+    margin-left: auto;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+    color: #666666;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    position: relative;
+    top: -3px;
+    left: 7px;
 }
 
 .auto_play img {
@@ -117,7 +137,20 @@ input:checked+.slider:before {
 .recommended_img {
   margin: 0px;
 }
-
+span.video_length {
+      bottom: 2px;
+      background-color: #444444a8;
+      color: #f5f5f5ba;
+      flex: none;
+      position: relative;
+      right: 2px;
+      margin-right: 0px;
+      float: right;
+      top: -29px;
+      padding: 4px;
+      font-size: 12px;
+      font-weight: bold;
+}
 .recommended_info {
   margin-left: 5px;
   width: 250px;
@@ -160,6 +193,8 @@ input:checked+.slider:before {
 
 .footer {
   clear: both;
+  background-color:#ffffff;
+  border-top: 1px solid #e2e2e2;
 }
 
 .footer_one li {
@@ -199,11 +234,7 @@ input:checked+.slider:before {
 }
 
 
-/*
-==========================
-Material Icons
-==========================
-*/
+/* Material Icons */
 
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -216,11 +247,7 @@ Material Icons
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
-/*
-==========================
-Custom Styles
-==========================
-*/
+/* Custom Styles */
 
 body {
 background: #F5F5F5;
@@ -238,12 +265,22 @@ border-top: 0;
 box-sizing: border-box;
 }
 
+hr.footer {
+    border: 1px solid #e2e2e2;
+    border-bottom: 0;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+li.logo-footer {
+    top: 6px;
+    position: relative;
+}
 
-/*
-==========================
-Overall Layout
-==========================
-*/
+ul.footer_one {
+    margin-top: 13px;
+}
+
+/* Overall Layout */
 
 .main-screen {
 display: flex;
@@ -267,7 +304,7 @@ position: fixed;
 left: 0;
 transform: translate3d(0,0,0);
 transition: transform .15s;
-top: 45px;
+top: 60px;
 }
 #nav-drawer > * {
 flex: none;
@@ -275,16 +312,13 @@ flex: none;
 .masthead {
 z-index: 1;
 flex: none;
+height:60px;
 }
 .hide {
 transform: translate3d(-100%,0,0) !important;
 }
 
-/*
-==========================
-Flex Elements
-==========================
-*/
+/* Flex Elements */
 
 .logo-container > *,
 .user-container > *,
@@ -345,23 +379,23 @@ margin-left: .5rem;
 .search-input {
 flex: 1;
 max-width: 550px;
-}
-.search-input {
+height:30px;
 border-radius: 2px 0 0 2px;
 border: 1px solid #e2e2e2;
+padding-left:0.4rem;
+font-size: 16px;
+color:#EEEEEE;
 }
 .search-button {
 border-radius: 0 2px 2px 0;
 border-left: 0;
 margin: 0;
-
+padding: 0;
+width:60px;
+justify-content: center;
 }
 
-/*
-==========================
-Spacing & Margin
-==========================
-*/
+/* Spacing & Margin */
 
 .main {
 width: 400px;
@@ -391,6 +425,7 @@ margin: .25rem;
 
 .bg-style {
 padding: .5rem;
+padding-top: 20px;
 }
 
 #nav-drawer > * {
@@ -413,11 +448,7 @@ margin-top: 1rem;
 }
 
 
-/*
-==========================
-Typography
-==========================
-*/
+/* Typography */
 
 h1, h3, h5, p, a, span, button, textarea, li {
 font-family: 'Roboto', sans-serif;
@@ -489,11 +520,10 @@ color: #cc181e;
 i {
 padding-right: .4rem;
 }
-
-/*
-Buttons & Links
-==========================
-*/
+i.material-icons.md-18.md-dark{
+  padding:0px !important;
+}
+/* Buttons & Links */
 
 a {
 text-decoration: none;
@@ -543,9 +573,7 @@ background: #444;
 color: #fff;
 }
 
-/*
-Switch
-*/
+/* Switch */
 
 .switch-container {
 cursor: pointer;
@@ -571,9 +599,7 @@ z-index: 4;
 }
 
 
-/*
-Images
-*/
+/* Images */
 
 iframe {
 width: 400px;
@@ -589,9 +615,10 @@ width: 120px;
 height: 90px;
 }
 .logo {
-background: no-repeat url('http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflVV84g4.webp') -167px -205px;
-height: 30px;
-width: 72px;
+      background: no-repeat url(https://seeklogo.com/images/Y/youtube-2017-logo-D185B4FEFA-seeklogo.com.png);
+      height: 30px;
+      width: 136px;
+      background-size: cover;
 }
 .btn-profile {
 background: url('https://yt3.ggpht.com/a/AGF-l78OD14co8EI1BqQiGzYkAv9NRTOloTYxYCR9Q=s900-c-k-c0xffffffff-no-rj-mo');
@@ -602,9 +629,7 @@ background-size: cover;
 border-radius: 50%;
 }
 
-/*
-Medium Screens
-*/
+/* Medium Screens */
 
 @media all and (min-width: 650px) {
 .content {
@@ -612,6 +637,7 @@ Medium Screens
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-start;
+
 }
 
 .main {
@@ -629,16 +655,36 @@ iframe {
   display: block;
 }
 .search {
-  margin-left: 4rem;
+  justify-content: center;
 }
 }
 
-/*
-Large Screens
-*/
+/* Large Screens */
 
 @media all and (min-width: 1000px) {
 .content {
   justify-content: center;
 }
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  min-width: 1000px;
+  padding-top: 24px;
+
+}
+.secondary-links-footer {
+  padding-bottom: 30px;
+}
+.primary-links-footer {
+  border-top: 1px solid #e2e2e2;
+  padding-top: .5rem;
+}
+.button-footer, .primary-links-footer, .secondary-links-footer {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 0;
+  padding-right: 0;
 }
