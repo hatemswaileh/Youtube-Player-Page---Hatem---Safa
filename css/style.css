@@ -25,11 +25,7 @@ margin-top: 6px;
       display: block;
 }
 
-/*
-  ==========================
-  Overall Layout
-  ==========================
-*/
+/* Overall Layout */
 
 .recommended_header {
   width: 100%;
@@ -238,11 +234,7 @@ span.video_length {
 }
 
 
-/*
-==========================
-Material Icons
-==========================
-*/
+/* Material Icons */
 
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -255,11 +247,7 @@ Material Icons
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
-/*
-==========================
-Custom Styles
-==========================
-*/
+/* Custom Styles */
 
 body {
 background: #F5F5F5;
@@ -292,11 +280,7 @@ ul.footer_one {
     margin-top: 13px;
 }
 
-/*
-==========================
-Overall Layout
-==========================
-*/
+/* Overall Layout */
 
 .main-screen {
 display: flex;
@@ -334,11 +318,7 @@ height:60px;
 transform: translate3d(-100%,0,0) !important;
 }
 
-/*
-==========================
-Flex Elements
-==========================
-*/
+/* Flex Elements */
 
 .logo-container > *,
 .user-container > *,
@@ -415,11 +395,7 @@ width:60px;
 justify-content: center;
 }
 
-/*
-==========================
-Spacing & Margin
-==========================
-*/
+/* Spacing & Margin */
 
 .main {
 width: 400px;
@@ -449,6 +425,7 @@ margin: .25rem;
 
 .bg-style {
 padding: .5rem;
+padding-top: 20px;
 }
 
 #nav-drawer > * {
@@ -471,11 +448,7 @@ margin-top: 1rem;
 }
 
 
-/*
-==========================
-Typography
-==========================
-*/
+/* Typography */
 
 h1, h3, h5, p, a, span, button, textarea, li {
 font-family: 'Roboto', sans-serif;
@@ -550,10 +523,7 @@ padding-right: .4rem;
 i.material-icons.md-18.md-dark{
   padding:0px !important;
 }
-/*
-Buttons & Links
-==========================
-*/
+/* Buttons & Links */
 
 a {
 text-decoration: none;
@@ -603,9 +573,7 @@ background: #444;
 color: #fff;
 }
 
-/*
-Switch
-*/
+/* Switch */
 
 .switch-container {
 cursor: pointer;
@@ -631,9 +599,7 @@ z-index: 4;
 }
 
 
-/*
-Images
-*/
+/* Images */
 
 iframe {
 width: 400px;
@@ -651,7 +617,7 @@ height: 90px;
 .logo {
       background: no-repeat url(https://seeklogo.com/images/Y/youtube-2017-logo-D185B4FEFA-seeklogo.com.png);
       height: 30px;
-      width: 135px;
+      width: 136px;
       background-size: cover;
 }
 .btn-profile {
@@ -663,9 +629,7 @@ background-size: cover;
 border-radius: 50%;
 }
 
-/*
-Medium Screens
-*/
+/* Medium Screens */
 
 @media all and (min-width: 650px) {
 .content {
@@ -695,12 +659,32 @@ iframe {
 }
 }
 
-/*
-Large Screens
-*/
+/* Large Screens */
 
 @media all and (min-width: 1000px) {
 .content {
   justify-content: center;
 }
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  min-width: 1000px;
+  padding-top: 24px;
+
+}
+.secondary-links-footer {
+  padding-bottom: 30px;
+}
+.primary-links-footer {
+  border-top: 1px solid #e2e2e2;
+  padding-top: .5rem;
+}
+.button-footer, .primary-links-footer, .secondary-links-footer {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 0;
+  padding-right: 0;
 }
