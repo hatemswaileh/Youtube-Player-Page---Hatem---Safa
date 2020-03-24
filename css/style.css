@@ -293,6 +293,7 @@ flex-direction: column;
 -webkit-overflow-scrolling: touch;
 justify-content: space-between;
 height: 100vh;
+margin-top: 23px;
 }
 
 #nav-drawer {
