@@ -19,7 +19,7 @@ margin-top: 0px;
       padding: .5rem;
       background: #fff;
       border: 1px solid #e2e2e2;
-      margin-top: 30px;
+      margin-top: 76px;
       margin-bottom: 8px;
       box-sizing: border-box;
       display: block;
@@ -288,6 +288,7 @@ flex-direction: column;
 -webkit-overflow-scrolling: touch;
 justify-content: space-between;
 height: 100vh;
+margin-top: 45px;
 }
 
 .player {
@@ -316,6 +317,11 @@ height:60px;
 transform: translate3d(-100%,0,0);
 }
 
+nav.masthead.bg-style {
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
 
 .logo-container > *,
 .user-container > *,
@@ -429,7 +435,8 @@ margin: .25rem;
 
 .bg-style {
 padding: .5rem;
-padding-top: 20px;
+padding-top: 15px;
+padding-bottom: 15px;
 }
 
 #nav-drawer > * {
@@ -460,7 +467,7 @@ h1, h3, h5, p, li {
 color: #212121;
 }
 h1 {
-font-size: 1.5rem; 
+font-size: 1.5rem;
 font-weight: 400;
 }
 h3 {
@@ -472,7 +479,7 @@ font-size: .8rem;
 margin: .4rem 0;
 }
 p, li, textarea {
-font-size: .75rem; 
+font-size: .75rem;
 }
 textarea {
 border: 1px solid #e2e2e2;
